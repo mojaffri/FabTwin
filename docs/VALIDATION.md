@@ -19,7 +19,9 @@ Statistical tests independently check MR-based capability versus overall variati
 
 ## Not yet validated
 
-The supplied GitHub Actions Windows/Linux workflow has not been remotely executed. No Linux/macOS build was run locally, no target MCU was compiled/flashed, no UART hardware was exercised, and no real process data were collected. Tests support this host simulation implementation; they are not industrial controller certification or physical model validation.
+The [GitHub Actions run for source commit f327cf7](https://github.com/mojaffri/FabTwin/actions/runs/34562219322) passed on Windows, Ubuntu Linux and macOS. Each job installed the package, checked formatting/lint, built the C++ library, ran the native C++ tests and Python suite, and generated a demonstration artifact. This checks independent host toolchains in addition to the local Zig build.
+
+No target MCU was compiled/flashed, no UART hardware was exercised, and no real process data were collected. Tests support this host simulation implementation; they are not industrial controller certification or physical model validation. The full 620-cycle reference campaign was run locally on Windows; CI runs the test suite and nominal demonstration, not the entire campaign.
 
 ## Reproduction
 

@@ -21,6 +21,8 @@ Reference run: **37 passing Python tests + native C++ tests · 620 simulated cyc
 2. Reproduce the cycle and run the tests.
 3. Change one assumption, rerun the experiments, and explain the result in an interview.
 
+For a concise explanation of the decisions and limitations, read the [engineering case study](docs/CASE_STUDY.md). In this simulation, the nominal-kinetics baseline slightly outperforms ML; the project reports that comparison openly.
+
 Python 3.10+ and a C++17 compiler are required. Python 3.12 is the reference environment. From this repository folder:
 
 ```bash
