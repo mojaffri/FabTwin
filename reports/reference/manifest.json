@@ -1,0 +1,31 @@
+{
+  "timestamp_utc": "2026-09-11T04:23:45.970297+00:00",
+  "seed": 7,
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "versions": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "statsmodels": "0.15.0",
+    "matplotlib": "3.11.1"
+  },
+  "source_sha256": {
+    "controller/include/controller.hpp": "0d5b5ccb2121b011d62223dcf4a2b864e9037cb90e7f5aae43cbf00f4cef8aae",
+    "controller/src/bridge.cpp": "83e5df59d004a4f0266f5627e547b7158d2a025ff838e1c94c1d6aa845c31f70",
+    "controller/tests/core_tests.cpp": "5de638a3645e640e273188a6f35428651b4d171ee290f2471804ce2fc0dd2507",
+    "src/fabtwin/__init__.py": "6a5e8beba71b179d890b92f2d7bd50fadaafe5ca1828e4ad748b9f38e33cc6a9",
+    "src/fabtwin/cli.py": "49641a8268a5b5b66d66e4329cd07c80c4ba9c8ca3c6190c59e9fcdea42f68b2",
+    "src/fabtwin/experiments.py": "a40bfae6fcc84392751450315dced66500d0cfaa43b79f7dcce5444bf77e98db",
+    "src/fabtwin/model.py": "4d99aacb93b7e3608dad7fd79293e0d85fcfb9b2dcb52a4cb20ecbf857c4fbdc",
+    "src/fabtwin/plots.py": "a17a39009748f9874ec005e52a98848bfd45c9428274a0807dc651002bcea2e6",
+    "src/fabtwin/protocol.py": "7d426162e0073d00e6df2c2c0a3444f1cfbcc78b59cca0713ed426de170cd575",
+    "src/fabtwin/simulation.py": "987cb9238da9fdf2a50151132a80cd68f32895d3575b6a5655cc55febe02ae7e",
+    "src/fabtwin/statistics.py": "09670b55ae0dd4e7f6e88ca9483b09ffd9f8d749841157cf17d4d6ed3061f5c4"
+  },
+  "simulation_only": true,
+  "controller": "Compiled C++17 host library; CRC-framed in-memory serial emulation",
+  "controller_binary_sha256": "66781757a410af51defc1c8b210b45932418e31aeb880bce5237bc754b50743d",
+  "controller_binary_name": "fabtwin_controller.dll"
+}

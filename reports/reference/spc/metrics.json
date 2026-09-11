@@ -1,0 +1,28 @@
+{
+  "baseline_wafers": 80,
+  "drift_first_wafer": 161,
+  "first_ewma_detection_wafer": 170,
+  "detection_delay_wafers": 9,
+  "pre_drift_ewma_alarm_count": 1,
+  "pre_drift_monitoring_wafers": 80,
+  "baseline_capability": {
+    "n": 80,
+    "mean_nm": 100.3295793976672,
+    "sigma_within_nm": 0.8866436587894125,
+    "sigma_overall_nm": 0.9038888275043775,
+    "Cp": 1.879748025201315,
+    "Cpk": 1.7558427808189223,
+    "Pp": 1.8438845751288977,
+    "Ppk": 1.7223433016011318,
+    "observed_in_spec_fraction": 1.0
+  },
+  "phase1": {
+    "center": 100.3295793976672,
+    "sigma": 0.8866436587894125,
+    "phase1_individual_signals": 1,
+    "phase1_mr_signals": 2,
+    "lag1_correlation": -0.09329776304070972,
+    "note": "Capability is descriptive/provisional. Phase I I-MR screening alone does not establish normality or stability."
+  },
+  "note": "Limits frozen after baseline. Post-drift capability deliberately not reported; chart uses delayed simulated metrology at one measurement per wafer."
+}

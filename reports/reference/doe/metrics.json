@@ -1,0 +1,24 @@
+{
+  "design": "Replicated face-centered central composite: 16 factorial, 12 axial, 12 center runs; randomized order",
+  "runs": 40,
+  "model_rank": 10,
+  "residual_df": 30,
+  "r_squared": 0.9805187730652474,
+  "lack_of_fit": {
+    "F": 0.9903453381406072,
+    "p": 0.44346852902392364,
+    "df": 5,
+    "pure_error_df": 25
+  },
+  "recipe": {
+    "temperature_c": 448.5,
+    "pressure_torr": 2.92,
+    "flow_sccm": 107.5,
+    "deposition_s": 120.0
+  },
+  "predicted_thickness_nm": 100.00264640170019,
+  "confirmation_mean_nm": 100.33529229818947,
+  "confirmation_std_nm": 0.7547182200819438,
+  "confirmation_n": 12,
+  "note": "Local quadratic approximation; synthetic effects and p-values do not establish physical process validity."
+}

@@ -1,0 +1,189 @@
+{
+  "cycle": {
+    "seed": 7,
+    "temperature_c": 450.0,
+    "pressure_torr": 3.0,
+    "flow_sccm": 100.0,
+    "deposition_s": 120.0,
+    "state": "COMPLETE",
+    "fault": "NONE",
+    "cycle_s": 422.0,
+    "truth_thickness_nm": 99.42449423374767,
+    "measured_thickness_nm": 99.23146621815859,
+    "temperature_mean": 450.1605869150055,
+    "temperature_std": 0.29541999411905656,
+    "pressure_mean": 3.0000320610475995,
+    "pressure_std": 0.003092157461205617,
+    "flow_mean": 100.00490619055397,
+    "flow_std": 0.15122532297986765,
+    "heater_mean": 0.4466855958958334,
+    "deposition_time": 120.0,
+    "thermal_dose": 120.08111055626802,
+    "flow_dose": 12000.588742866476
+  },
+  "doe": {
+    "design": "Replicated face-centered central composite: 16 factorial, 12 axial, 12 center runs; randomized order",
+    "runs": 40,
+    "model_rank": 10,
+    "residual_df": 30,
+    "r_squared": 0.9805187730652474,
+    "lack_of_fit": {
+      "F": 0.9903453381406072,
+      "p": 0.44346852902392364,
+      "df": 5,
+      "pure_error_df": 25
+    },
+    "recipe": {
+      "temperature_c": 448.5,
+      "pressure_torr": 2.92,
+      "flow_sccm": 107.5,
+      "deposition_s": 120.0
+    },
+    "predicted_thickness_nm": 100.00264640170019,
+    "confirmation_mean_nm": 100.33529229818947,
+    "confirmation_std_nm": 0.7547182200819438,
+    "confirmation_n": 12,
+    "note": "Local quadratic approximation; synthetic effects and p-values do not establish physical process validity."
+  },
+  "spc": {
+    "baseline_wafers": 80,
+    "drift_first_wafer": 161,
+    "first_ewma_detection_wafer": 170,
+    "detection_delay_wafers": 9,
+    "pre_drift_ewma_alarm_count": 1,
+    "pre_drift_monitoring_wafers": 80,
+    "baseline_capability": {
+      "n": 80,
+      "mean_nm": 100.3295793976672,
+      "sigma_within_nm": 0.8866436587894125,
+      "sigma_overall_nm": 0.9038888275043775,
+      "Cp": 1.879748025201315,
+      "Cpk": 1.7558427808189223,
+      "Pp": 1.8438845751288977,
+      "Ppk": 1.7223433016011318,
+      "observed_in_spec_fraction": 1.0
+    },
+    "phase1": {
+      "center": 100.3295793976672,
+      "sigma": 0.8866436587894125,
+      "phase1_individual_signals": 1,
+      "phase1_mr_signals": 2,
+      "lag1_correlation": -0.09329776304070972,
+      "note": "Capability is descriptive/provisional. Phase I I-MR screening alone does not establish normality or stability."
+    },
+    "note": "Limits frozen after baseline. Post-drift capability deliberately not reported; chart uses delayed simulated metrology at one measurement per wafer."
+  },
+  "vm": {
+    "features": [
+      "temperature_mean",
+      "temperature_std",
+      "pressure_mean",
+      "pressure_std",
+      "flow_mean",
+      "flow_std",
+      "heater_mean",
+      "deposition_time",
+      "thermal_dose",
+      "flow_dose"
+    ],
+    "split_sizes": {
+      "train": 140,
+      "tune": 40,
+      "calibration": 40,
+      "test": 40,
+      "drift": 40
+    },
+    "selected_model": "quadratic_ridge_1.0",
+    "tuning_MAE_nm": {
+      "quadratic_ridge_0.1": 0.684364779466776,
+      "quadratic_ridge_1.0": 0.6545092718328422,
+      "quadratic_ridge_10.0": 0.6892523506523685,
+      "random_forest": 1.6088719350681386
+    },
+    "interval_half_width_nm": 1.6057226692193893,
+    "nominal_coverage": 0.9,
+    "evaluation": {
+      "test": {
+        "MAE_nm": 0.6843648333724058,
+        "RMSE_nm": 0.8639342759091787,
+        "R2": 0.9762383732392631,
+        "mean_baseline_MAE_nm": 4.670515579248393,
+        "nominal_kinetics_MAE_nm": 0.6288363023825937,
+        "interval_coverage": 0.925,
+        "MAE_bootstrap_95_interval_nm": [
+          0.5288431029002344,
+          0.8565949398054838
+        ]
+      },
+      "drift": {
+        "MAE_nm": 4.200690536342778,
+        "RMSE_nm": 4.863337427543727,
+        "R2": 0.6038603294548148,
+        "mean_baseline_MAE_nm": 7.313174485240016,
+        "nominal_kinetics_MAE_nm": 3.9168460084658134,
+        "interval_coverage": 0.225
+      }
+    },
+    "note": "Chronological disjoint wafer splits. Synthetic data only. Marginal conformal interpretation requires exchangeability; drift violates it. No physical accuracy claim.",
+    "residual_monitor": {
+      "first_drift_wafer": 261,
+      "first_signal_wafer": 272,
+      "delay_wafers": 11,
+      "pre_drift_alarm_count": 0,
+      "pre_drift_wafers": 40,
+      "calibration_diagnostics": {
+        "center": 0.013123702119343151,
+        "sigma": 1.1436638311879637,
+        "phase1_individual_signals": 0,
+        "phase1_mr_signals": 0,
+        "lag1_correlation": -0.24881270541099515,
+        "note": "Capability is descriptive/provisional. Phase I I-MR screening alone does not establish normality or stability."
+      },
+      "note": "Uses delayed simulated metrology, not real-time fault discovery. Limits frozen from the independent calibration split."
+    }
+  },
+  "faults": [
+    {
+      "injection": "door_open",
+      "state": "FAULT",
+      "fault": "DOOR",
+      "cycle_s": 150.0
+    },
+    {
+      "injection": "estop",
+      "state": "FAULT",
+      "fault": "ESTOP",
+      "cycle_s": 150.0
+    },
+    {
+      "injection": "stale",
+      "state": "FAULT",
+      "fault": "STALE",
+      "cycle_s": 150.0
+    },
+    {
+      "injection": "vacuum_leak",
+      "state": "FAULT",
+      "fault": "OVERPRESSURE",
+      "cycle_s": 151.75
+    },
+    {
+      "injection": "heater_loss",
+      "state": "FAULT",
+      "fault": "TIMEOUT",
+      "cycle_s": 457.75
+    },
+    {
+      "injection": "sensor_bias",
+      "state": "COMPLETE",
+      "fault": "NONE",
+      "cycle_s": 441.0
+    },
+    {
+      "injection": "deposition_heater_loss",
+      "state": "FAULT",
+      "fault": "PROCESS_WINDOW",
+      "cycle_s": 154.75
+    }
+  ]
+}

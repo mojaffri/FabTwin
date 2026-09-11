@@ -1,0 +1,22 @@
+{
+  "seed": 7,
+  "temperature_c": 450.0,
+  "pressure_torr": 3.0,
+  "flow_sccm": 100.0,
+  "deposition_s": 120.0,
+  "state": "COMPLETE",
+  "fault": "NONE",
+  "cycle_s": 422.0,
+  "truth_thickness_nm": 99.42449423374767,
+  "measured_thickness_nm": 99.23146621815859,
+  "temperature_mean": 450.1605869150055,
+  "temperature_std": 0.29541999411905656,
+  "pressure_mean": 3.0000320610475995,
+  "pressure_std": 0.003092157461205617,
+  "flow_mean": 100.00490619055397,
+  "flow_std": 0.15122532297986765,
+  "heater_mean": 0.4466855958958334,
+  "deposition_time": 120.0,
+  "thermal_dose": 120.08111055626802,
+  "flow_dose": 12000.588742866476
+}

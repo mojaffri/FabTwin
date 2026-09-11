@@ -1,0 +1,69 @@
+{
+  "features": [
+    "temperature_mean",
+    "temperature_std",
+    "pressure_mean",
+    "pressure_std",
+    "flow_mean",
+    "flow_std",
+    "heater_mean",
+    "deposition_time",
+    "thermal_dose",
+    "flow_dose"
+  ],
+  "split_sizes": {
+    "train": 140,
+    "tune": 40,
+    "calibration": 40,
+    "test": 40,
+    "drift": 40
+  },
+  "selected_model": "quadratic_ridge_1.0",
+  "tuning_MAE_nm": {
+    "quadratic_ridge_0.1": 0.684364779466776,
+    "quadratic_ridge_1.0": 0.6545092718328422,
+    "quadratic_ridge_10.0": 0.6892523506523685,
+    "random_forest": 1.6088719350681386
+  },
+  "interval_half_width_nm": 1.6057226692193893,
+  "nominal_coverage": 0.9,
+  "evaluation": {
+    "test": {
+      "MAE_nm": 0.6843648333724058,
+      "RMSE_nm": 0.8639342759091787,
+      "R2": 0.9762383732392631,
+      "mean_baseline_MAE_nm": 4.670515579248393,
+      "nominal_kinetics_MAE_nm": 0.6288363023825937,
+      "interval_coverage": 0.925,
+      "MAE_bootstrap_95_interval_nm": [
+        0.5288431029002344,
+        0.8565949398054838
+      ]
+    },
+    "drift": {
+      "MAE_nm": 4.200690536342778,
+      "RMSE_nm": 4.863337427543727,
+      "R2": 0.6038603294548148,
+      "mean_baseline_MAE_nm": 7.313174485240016,
+      "nominal_kinetics_MAE_nm": 3.9168460084658134,
+      "interval_coverage": 0.225
+    }
+  },
+  "note": "Chronological disjoint wafer splits. Synthetic data only. Marginal conformal interpretation requires exchangeability; drift violates it. No physical accuracy claim.",
+  "residual_monitor": {
+    "first_drift_wafer": 261,
+    "first_signal_wafer": 272,
+    "delay_wafers": 11,
+    "pre_drift_alarm_count": 0,
+    "pre_drift_wafers": 40,
+    "calibration_diagnostics": {
+      "center": 0.013123702119343151,
+      "sigma": 1.1436638311879637,
+      "phase1_individual_signals": 0,
+      "phase1_mr_signals": 0,
+      "lag1_correlation": -0.24881270541099515,
+      "note": "Capability is descriptive/provisional. Phase I I-MR screening alone does not establish normality or stability."
+    },
+    "note": "Uses delayed simulated metrology, not real-time fault discovery. Limits frozen from the independent calibration split."
+  }
+}
