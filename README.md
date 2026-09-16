@@ -59,6 +59,14 @@ For the exact reference Python dependency versions, install `requirements-refere
 
 ## Demonstrations
 
+### Measurement-system extension
+
+The [crossed Gage R&R study](docs/MEASUREMENT.md) adds 10 synthetic parts × 3 operators × 3 repeats to examine measurement noise before interpreting process capability. Run `python -m fabtwin.measurement --out runs/measurement`. The nominal and noisy gages consume **11.58% and 57.77%** of the illustrative thickness tolerance respectively; these are synthetic sensitivity results, not hardware qualification. The current local suite has **40 Python tests**, including three checks for this extension; the original 37-test release evidence below is preserved.
+
+### Complementary portfolio scope
+
+FabTwin remains the **deposition process/manufacturing** project: dynamic control, DOE, film-thickness response, measurement systems and virtual metrology. The separate **FabGuard** project covers plasma-etch **equipment analytics across a tool fleet**: subgroup SPC, matching, maintenance forecasts, reliability/OEE and recipe tradeoffs. Keep those equipment-fleet features in FabGuard rather than adding a second overlapping analytics suite here.
+
 | Command | Engineering question | Deliverables |
 |---|---|---|
 | `demo` | Can the controller complete an interlocked deposition recipe? | Sensor and actuator traces, state transitions, cycle plot |

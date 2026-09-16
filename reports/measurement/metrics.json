@@ -1,0 +1,28 @@
+{
+  "nominal": {
+    "n": 90,
+    "variance_components_nm2": {
+      "repeatability": 0.03566546381025246,
+      "operator": 0.0015563011207568066,
+      "interaction": 0.0,
+      "part": 1.0663030994765206
+    },
+    "grr_sigma_nm": 0.1929294299245433,
+    "percent_tolerance": 11.575765795472597,
+    "percent_study_variation": 18.36569719137489,
+    "note": "Unpooled crossed random-effects ANOVA; negative variance estimates truncated at zero. Synthetic only."
+  },
+  "noisy_gage": {
+    "n": 90,
+    "variance_components_nm2": {
+      "repeatability": 0.8916365952562991,
+      "operator": 0.03544530266788666,
+      "interaction": 0.0,
+      "part": 1.148424514841484
+    },
+    "grr_sigma_nm": 0.9628509219625777,
+    "percent_tolerance": 57.771055317754666,
+    "percent_study_variation": 66.83393174579332,
+    "note": "Unpooled crossed random-effects ANOVA; negative variance estimates truncated at zero. Synthetic only."
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "seed": 7,
+  "simulation_only": true,
+  "source_sha256": "2a02d3f964304906cd5f949c4e302f7a7dddd379b93ae734eb12efbe5b41ab54",
+  "data_sha256": {
+    "noisy_gage.csv": "7c7d130000c926e2665ccff0ee6741145aef102ffefd1d3e92177448d8f71ca6",
+    "nominal.csv": "9cdde727e34707aace565462e8307cb814070bc454c7d579c6bea81bf39c7245"
+  }
+}
